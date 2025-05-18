@@ -20,7 +20,9 @@
       }
     ],
     "paths": {
-      "@demo/shared": ["tools/demo/index.ts"]
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@wayne/*": ["packages/*"],
+      "@wayne/wayne-label-marquee": ["packages/wayne-label-marquee/index.d.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

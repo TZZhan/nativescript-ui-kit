@@ -55,12 +55,19 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@wayne/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @wayne/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@wayne': {
+      // @wayne/wayne-label-marquee
+      'wayne-label-marquee': {
+        build: {
+          script: 'nx run wayne-label-marquee:build.all',
+          description: '@wayne/wayne-label-marquee: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -71,6 +78,10 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      'wayne-label-marquee': {
+        script: 'nx run wayne-label-marquee:focus',
+        description: 'Focus on @wayne/wayne-label-marquee',
+      },
       reset: {
         script: 'nx g @nativescript/plugin-tools:focus-packages',
         description: 'Reset Focus',
