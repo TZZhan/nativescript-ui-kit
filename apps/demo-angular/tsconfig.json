@@ -5,7 +5,7 @@
       "~/*": ["src/*"],
       "@demo/shared": ["tools/demo/index.ts"],
       "@wayne/*": ["../../dist/packages/*"],
-      "@wayne/wayne-label-marquee": ["../../packages/wayne-label-marquee/index.d.ts"]
+      "@wayne/wayne-plugins": ["../../packages/wayne-plugins/index.d.ts"]
     }
   },
   "files": ["./references.d.ts", "./src/main.ts", "./src/polyfills.ts"],

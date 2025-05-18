@@ -1,0 +1,4 @@
+framework module MySwiftLibrary {
+  header "MySwiftLibrary-Swift.h"
+  requires objc
+}

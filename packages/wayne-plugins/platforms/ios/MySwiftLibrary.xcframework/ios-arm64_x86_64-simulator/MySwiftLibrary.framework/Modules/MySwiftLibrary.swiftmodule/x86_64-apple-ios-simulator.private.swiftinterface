@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MySwiftLibrary
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @objcMembers public class Greeter : ObjectiveC.NSObject {
+  @objc public var greetingPrefix: Swift.String
+  @objc override dynamic public init()
+  @objc(initWithGreetingPrefix:) public init(prefix: Swift.String)
+  @objc public func greet(name: Swift.String) -> Swift.String
+  @objc(greetName:completion:) public func greet(name: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency open class WayneTableView : UIKit.UIView {
+  public typealias ButtonClickCallback = () -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor @preconcurrency public func setButtonClickCallback(_ callback: @escaping MySwiftLibrary.WayneTableView.ButtonClickCallback)
+  @objc @_Concurrency.MainActor @preconcurrency public func changeTheme()
+  @objc @_Concurrency.MainActor @preconcurrency open func changeOpenTheme()
+  @objc deinit
+}

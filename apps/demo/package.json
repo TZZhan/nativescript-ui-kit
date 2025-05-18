@@ -5,10 +5,10 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "@wayne/wayne-label-marquee": "file:../../packages/wayne-label-marquee"
+    "@wayne/wayne-plugins": "file:../../packages/wayne-plugins"
   },
   "devDependencies": {
     "@nativescript/android": "~8.8.0",
-    "@nativescript/ios": "~8.8.0"
+    "@nativescript/ios": "8.9.2"
   }
 }

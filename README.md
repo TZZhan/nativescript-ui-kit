@@ -1,11 +1,4 @@
-# @wayne/\* plugins
-
-```
-npm run setup
-npm start
-```
-
-- [@wayne/wayne-label-marquee](packages/wayne-label-marquee/README.md)
+- [@wayne/wayne-plugins](packages/wayne-plugins/README.md)
 
 # How to use?
 

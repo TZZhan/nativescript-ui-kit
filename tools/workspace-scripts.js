@@ -61,11 +61,11 @@ module.exports = {
     // packages
     // build output is always in dist/packages
     '@wayne': {
-      // @wayne/wayne-label-marquee
-      'wayne-label-marquee': {
+      // @wayne/wayne-plugins
+      'wayne-plugins': {
         build: {
-          script: 'nx run wayne-label-marquee:build.all',
-          description: '@wayne/wayne-label-marquee: Build',
+          script: 'nx run wayne-plugins:build.all',
+          description: '@wayne/wayne-plugins: Build',
         },
       },
       'build-all': {
@@ -78,9 +78,9 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
-      'wayne-label-marquee': {
-        script: 'nx run wayne-label-marquee:focus',
-        description: 'Focus on @wayne/wayne-label-marquee',
+      'wayne-plugins': {
+        script: 'nx run wayne-plugins:focus',
+        description: 'Focus on @wayne/wayne-plugins',
       },
       reset: {
         script: 'nx g @nativescript/plugin-tools:focus-packages',

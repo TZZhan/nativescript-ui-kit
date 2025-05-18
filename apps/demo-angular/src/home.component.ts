@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-home',
-  templateUrl: 'home.component.html',
+  selector: 'ns-home',
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {
-  demos = [
+  items = [
     {
-      name: 'wayne-label-marquee',
+      name: 'wayne-plugins',
+      route: '/wayne-plugins',
     },
   ];
 }

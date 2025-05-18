@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule } from '@nativescript/angular';
 
-import { HomeComponent } from './home.component';
-
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'wayne-label-marquee', loadChildren: () => import('./plugin-demos/wayne-label-marquee.module').then((m) => m.WayneLabelMarqueeModule) },
+  { path: 'home', loadChildren: () => import('./home/home.module').then((m) => m.HomeModule) },
+  { path: 'wayne-plugins', loadChildren: () => import('./plugin-demos/wayne-plugins.module').then((m) => m.WaynePluginsModule) },
 ];
 
 @NgModule({
